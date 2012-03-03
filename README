@@ -1,0 +1,23 @@
+The standard Scaffold feature in Rails produces quite a few hardcoded (English) text, especially in headers and links. These files provide a simple change to change this hardcoded text to i18n variables. It's a quick hack I thought might be useful to others looking for similar, better solutions are more than welcome...
+
+Made to work with Rails 3.2.1
+
+To use: place the scaffold folder in 'lib/templates/erb/' in your Rails project.  
+Then add these variables to your localisation files:
+scaffoldi18n:
+  edit: Edit
+  show: Show
+  destroy: Delete
+  new: New
+  back: Back
+  edit: Edit
+  are_you_sure?: "Are you sure?"
+
+The files than take the names for model/columns etc from your values in:
+activerecord: 
+  attributes: 
+    column1: 'some name'
+    column2: 'some name'
+  models:
+    model1: 'some name'
+    model2: 'some name'
