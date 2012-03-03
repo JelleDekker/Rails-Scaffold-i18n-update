@@ -3,6 +3,7 @@ The standard Scaffold feature in Rails produces quite a few hardcoded (English) 
 Made to work with Rails 3.2.1
 
 To use: place the scaffold folder in 'lib/templates/erb/' in your Rails project.  
+
 Then add these variables to your localisation files:
 scaffoldi18n:
   edit: Edit
@@ -13,7 +14,7 @@ scaffoldi18n:
   edit: Edit
   are_you_sure?: "Are you sure?"
 
-The files than take the names for model/columns etc from your values in:
+The files then take the names for model/columns etc from your values in:
 activerecord: 
   attributes: 
     column1: 'some name'
